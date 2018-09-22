@@ -7,6 +7,9 @@ We employed Harmony search to derive local feature subsets for each pair of emot
 Finally, each local feature subset is fed to corresponding one-against-all SVM classifier, and it is used to classify each emotional recording.
 Experiments are conducted on the EMODB and IITKGP-SEHSC databases, demonstrating that size of each subset reduced to 50% of the size of original feature set, however, the accuracy remained almost same as original ones.
 
+[Project Report](https://github.com/cpankajr/Harmony-Search-for-Feature-Selection-in-ASER/blob/master/Documents/Project%20report.pdf)
+
+[Detailed Presentation](https://github.com/cpankajr/Harmony-Search-for-Feature-Selection-in-ASER/blob/master/Documents/Presentation.pptx)
 
 **Note: fitceoc function (used for multiclass classification) is only available after MATLAB 2016a**
 
@@ -35,13 +38,12 @@ Following files used for extracting MFCC features from speech samples (taken fro
 
 for further understanding of mfcc you can refer
 
-(pdf slides)
+[Spectrogram, Cepstrum and Mel-Frequency Analysis by Kishore Prahallad](https://github.com/cpankajr/Harmony-Search-for-Feature-Selection-in-ASER/blob/master/Documents/MFCC_%20explaination%20by%20Kishore%20Prahallad.pdf)
 
-(practical crypto)
-
+[Mel Frequency Cepstral Coefficient (MFCC) tutorial](http://practicalcryptography.com/miscellaneous/machine-learning/guide-mel-frequency-cepstral-coefficients-mfccs/)
 #
 **train_data.m** -> extracts 39 mfcc features nd computes thier mean, std. deviation, variance and kurtosis to get 156 feature vector for each sample. It trains SVM model (one vs all) nd saves all these feature nd trained model in **_'linear_emodb.mat'_**	file
-
+So rather than extracting features again you can directly use this file.
 
 **test_model.m** -> this used for testing a model.
 
@@ -61,10 +63,11 @@ It takes lot of computation power so I have already provided output file in **_'
 
 for further understanding of Harmony search algorithm you can refer
 
-(thesis)
+[Presentation (slide no. 36 - 67)](https://github.com/cpankajr/Harmony-Search-for-Feature-Selection-in-ASER/blob/master/Documents/Presentation.pptx)
 
-(apna ppt)
-
+[Feature Selection with Harmony Search
+and its Applications
+by Ren Diao](https://pdfs.semanticscholar.org/73a4/958ca38e4ed5970c22168e021fb9e4793d9e.pdf)
 
 
 
