@@ -40,7 +40,7 @@ for further understanding of mfcc you can refer
 (practical crypto)
 
 #
-**train_data.m** -> extracts 39 mfcc features nd computes thier mean, std. deviation, variance and kurtosis to get 156 feature vector for each sample. It trains SVM model (one vs all) nd saves all these feature nd trained model in **_linear_emodb.mat_**	file
+**train_data.m** -> extracts 39 mfcc features nd computes thier mean, std. deviation, variance and kurtosis to get 156 feature vector for each sample. It trains SVM model (one vs all) nd saves all these feature nd trained model in **_'linear_emodb.mat'_**	file
 
 
 **test_model.m** -> this used for testing a model.
@@ -51,13 +51,13 @@ for further understanding of mfcc you can refer
 **FitFunc_SVM.m** -> It is fitness function or objective function for harmony search to evaluate selected subsets and original sets
 
 
-for getting optimum feature set you have to write following in MATLAB command window after loading **_linear_emodb.mat_**
+for getting optimum feature set you have to write following in MATLAB command window after loading **_'linear_emodb.mat'_**
 
 ```HS(trainset,classes,0.4,100, 0.9,100,156)```
 
-Output of this will be structure variable ans which will contain information about optimum feature set
+Output of this will be structure variable **_'ans'_** which will contain information about optimum feature set
 
-It takes lot of computation power so I have already provided output file in **_hs_156_linear_c_0.08.mat_** 
+It takes lot of computation power so I have already provided output file in **_'hs_156_linear_c_0.08.mat'_** 
 
 for further understanding of Harmony search algorithm you can refer
 
