@@ -11,8 +11,7 @@ Experiments are conducted on the EMODB and IITKGP-SEHSC databases, demonstrating
 
 [Detailed Presentation](https://github.com/cpankajr/Harmony-Search-for-Feature-Selection-in-ASER/blob/master/Documents/Presentation.pptx)
 
-**Note: fitceoc function (used for multiclass classification) is only available after MATLAB 2016a**
-
+**Note: All above codes are for EmoDB database , same codes can be used for other databses with some changes in code. 'fitceoc' function (used for multiclass classification) is only available after MATLAB 2016a.**
 
 EmoDB 535 utterances (339 for training +196 for testing)
 #
