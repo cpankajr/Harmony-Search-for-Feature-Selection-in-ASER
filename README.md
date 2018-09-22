@@ -13,12 +13,12 @@ Experiments are conducted on the EMODB and IITKGP-SEHSC databases, demonstrating
 
 
 EmoDB 535 utterances (339 for training +196 for testing)
-
+#
 
 **SilenceRemoval.m** -> For removing silnce in uttrances because they do not contain any information
                     By using end point detection method
 
-
+#
 Following files used for extracting MFCC features from speech samples (taken from voicebox toolbox)
 
 
@@ -40,13 +40,13 @@ for further understanding of mfcc you can refer
 
 (practical crypto)
 
-
+#
 **train_data.m** -> extracts 39 mfcc features nd computes thier mean, std. deviation, variance and kurtosis to get 156 feature vector for each sample. It trains SVM model (one vs all) nd saves all these feature nd trained model in linear_emodb.mat	file
 
 
 **test_model.m** -> this used for testing a model.
 
-
+#
 **HS.m** -> it is a function for Harmony search algorithm for Feature selection
 
 **FitFunc_SVM.m** -> It is fitness function or objective function for harmony search to evaluate selected subsets and original sets
