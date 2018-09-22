@@ -1,5 +1,4 @@
 # Harmony Search for Feature Selection in ASER
-Final Year project
 
 
 Selecting significant features out of large dimensions of the original speech features is an integral part of accurate speech emotion recognition. In this project, we proposed an automatic speech emotion classification system based on a harmony search algorithm as a feature selection strategy.
@@ -52,7 +51,7 @@ for further understanding of mfcc you can refer
 **FitFunc_SVM.m** -> It is fitness function or objective function for harmony search to evaluate selected subsets and original sets
 
 
-for getting optimum feature set you have to write following in MATLAB command window after loading linear_emodb.mat
+for getting optimum feature set you have to write following in MATLAB command window after loading **_linear_emodb.mat_**
 
 ```HS(trainset,classes,0.4,100, 0.9,100,156)```
 
