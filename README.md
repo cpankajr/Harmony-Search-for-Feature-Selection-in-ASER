@@ -41,7 +41,7 @@ for further understanding of mfcc you can refer
 (practical crypto)
 
 #
-**train_data.m** -> extracts 39 mfcc features nd computes thier mean, std. deviation, variance and kurtosis to get 156 feature vector for each sample. It trains SVM model (one vs all) nd saves all these feature nd trained model in linear_emodb.mat	file
+**train_data.m** -> extracts 39 mfcc features nd computes thier mean, std. deviation, variance and kurtosis to get 156 feature vector for each sample. It trains SVM model (one vs all) nd saves all these feature nd trained model in **_linear_emodb.mat_**	file
 
 
 **test_model.m** -> this used for testing a model.
@@ -58,7 +58,7 @@ for getting optimum feature set you have to write following in MATLAB command wi
 
 Output of this will be structure variable ans which will contain information about optimum feature set
 
-It takes lot of computation power so I have already provided output file in hs_156_linear_c_0.08.mat 
+It takes lot of computation power so I have already provided output file in **_hs_156_linear_c_0.08.mat_** 
 
 for further understanding of Harmony search algorithm you can refer
 
